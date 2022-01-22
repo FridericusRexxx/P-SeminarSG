@@ -45,6 +45,23 @@ public class NewBehaviourScript : MonoBehaviour
         else
             jump.y = 0.0f;
         jump_pressedLastFrame = Input.GetKey("up");
+        
+        AudioSource sound = gameObject.GetComponent(typeof(AudioSource)) as AudioSource;
+
+        bool r = Input.GetKey("right");
+        bool l = Input.GetKey("left");
+        
+        if((r || l) && !(r && l)) 
+        {
+            if(!sound.isPlaying)
+                sound.Play();
+        }
+        else
+        {
+            if(sound.isPlaying)
+                sound.Stop();
+        }
+    
 
     }
     private void OnTriggerEnter(Collider other)
