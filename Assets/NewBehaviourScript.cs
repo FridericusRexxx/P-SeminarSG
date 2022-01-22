@@ -32,13 +32,13 @@ public class NewBehaviourScript : MonoBehaviour
         {
             if(!jump_pressedLastFrame && Input.GetKey("w"))
             {
-                isOnGround = false;
+                //isOnGround = false;
                 m_Rigidbody.AddForce(new Vector3(0,1,0) * m_Thrust, ForceMode.Impulse);
             }
         }
         else
         {
-            print("Not on ground!");
+            //print("Not on ground!");
         }
         jump_pressedLastFrame = Input.GetKey("w");
         
@@ -71,7 +71,14 @@ public class NewBehaviourScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     { 
-       print("funktioniert");
+       print("enter");
         isOnGround = true;
+    }
+
+    
+    private void OnTriggerExit(Collider other)
+    { 
+       print("exit");
+        isOnGround = false;
     }
 }
