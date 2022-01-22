@@ -5,7 +5,7 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
      Rigidbody m_Rigidbody;
-    public float m_Thrust = 1f;
+    public float m_Thrust = 10f;
     bool isOnGround;
     bool jump_pressedLastFrame;
     // Start is called before the first frame update
@@ -44,8 +44,8 @@ public class NewBehaviourScript : MonoBehaviour
         
         AudioSource sound = gameObject.GetComponent(typeof(AudioSource)) as AudioSource;
 
-        bool r = Input.GetKey("right");
-        bool l = Input.GetKey("left");
+        bool r = Input.GetKey("d");
+        bool l = Input.GetKey("a");
         
         if((r || l) && !(r && l)) 
         {
