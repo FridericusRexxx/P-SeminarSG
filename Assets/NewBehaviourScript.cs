@@ -6,6 +6,7 @@ public class NewBehaviourScript : MonoBehaviour
 {
      Rigidbody m_Rigidbody;
     public float m_Thrust = 10f;
+    public float speed = 1;
     bool isOnGround;
     bool jump_pressedLastFrame;
     // Start is called before the first frame update
@@ -21,18 +22,18 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if(Input.GetKey("d")){
                 print("D is held down");
-                gameObject.transform.position = gameObject.transform.position + new Vector3(0.05f,0,0); 
+                gameObject.transform.position = gameObject.transform.position + new Vector3(speed *Time.deltaTime,0,0); 
             }
             if(Input.GetKey("a")){
                 print("A is held down");
-                gameObject.transform.position = gameObject.transform.position + new Vector3(-0.05f,0,0); 
+                gameObject.transform.position = gameObject.transform.position + new Vector3(-speed *Time.deltaTime,0,0); 
             }
         if(isOnGround == true)
         {
             if(!jump_pressedLastFrame && Input.GetKey("w"))
             {
                 isOnGround = false;
-                 m_Rigidbody.AddForce(transform.up * m_Thrust,ForceMode.Impulse);
+                m_Rigidbody.AddForce(transform.up * m_Thrust, ForceMode.Impulse);
             }
         }
         else
@@ -56,6 +57,12 @@ public class NewBehaviourScript : MonoBehaviour
         {
             if(sound.isPlaying)
                 sound.Stop();
+        }
+
+        if(isOnGround == false)
+        {
+            if(sound.isPlaying)
+            sound.Stop();
         }
     
 
