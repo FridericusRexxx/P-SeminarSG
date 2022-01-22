@@ -32,26 +32,15 @@ public class NewBehaviourScript : MonoBehaviour
             if(!jump_pressedLastFrame && Input.GetKey("w"))
             {
                 isOnGround = false;
-<<<<<<< HEAD
                  m_Rigidbody.AddForce(transform.up * m_Thrust,ForceMode.Impulse);
-=======
-                jump = new Vector3(0,1.3f,0);
->>>>>>> c978c04f629ba1a36f29d30b5fd4e44687a680a3
             }
         }
         else
         {
             print("Not on ground!");
         }
-<<<<<<< HEAD
         jump_pressedLastFrame = Input.GetKey("w");
-=======
         
-        if(jump.y > 0)
-            jump.y -= 0.1f;
-        else
-            jump.y = 0.0f;
-        jump_pressedLastFrame = Input.GetKey("up");
         
         AudioSource sound = gameObject.GetComponent(typeof(AudioSource)) as AudioSource;
 
@@ -70,7 +59,6 @@ public class NewBehaviourScript : MonoBehaviour
         }
     
 
->>>>>>> c978c04f629ba1a36f29d30b5fd4e44687a680a3
     }
     private void OnTriggerEnter(Collider other)
     { 
