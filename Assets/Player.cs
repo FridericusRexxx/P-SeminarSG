@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Player : MonoBehaviour
 {
      Rigidbody m_Rigidbody;
     public float m_Thrust = 10f;
@@ -15,11 +15,11 @@ public class NewBehaviourScript : MonoBehaviour
          m_Rigidbody = GetComponent<Rigidbody>();
         isOnGround = true;
         jump_pressedLastFrame = false;
-    }   
+    }  
 
-    // Update is called once per frame
-    void Update()
+    private void UpdateMovement()
     {
+
         if(Input.GetKey("d")){
                 print("D is held down");
                 gameObject.transform.position = gameObject.transform.position + new Vector3(speed *Time.deltaTime,0,0); 
@@ -41,14 +41,17 @@ public class NewBehaviourScript : MonoBehaviour
             //print("Not on ground!");
         }
         jump_pressedLastFrame = Input.GetKey("w");
-        
-        
+    }
+
+    private void UpdateSound()
+    {
         AudioSource sound = gameObject.GetComponent(typeof(AudioSource)) as AudioSource;
 
-        bool r = Input.GetKey("d");
-        bool l = Input.GetKey("a");
-        
-        if((r || l) && !(r && l)) 
+        bool right = Input.GetKey("d");
+        bool left = Input.GetKey("a");
+        bool movement = (right || left) && !(right && left);
+
+        if(movement && isOnGround) 
         {
             if(!sound.isPlaying)
                 sound.Play();
@@ -58,16 +61,13 @@ public class NewBehaviourScript : MonoBehaviour
             if(sound.isPlaying)
                 sound.Stop();
         }
+    }
 
-        if(isOnGround == false)
-        {
-            if(sound.isPlaying)
-            sound.Stop();
-        }
-
-
-    
-
+    // Update is called once per frame
+    void Update()
+    {
+        UpdateMovement();
+        UpdateSound();
     }
     private void OnTriggerEnter(Collider other)
     { 
