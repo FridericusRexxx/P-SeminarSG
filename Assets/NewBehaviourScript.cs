@@ -33,7 +33,7 @@ public class NewBehaviourScript : MonoBehaviour
             if(!jump_pressedLastFrame && Input.GetKey("w"))
             {
                 isOnGround = false;
-                m_Rigidbody.AddForce(transform.up * m_Thrust, ForceMode.Impulse);
+                m_Rigidbody.AddForce(new Vector3(0,1,0) * m_Thrust, ForceMode.Impulse);
             }
         }
         else
@@ -64,6 +64,8 @@ public class NewBehaviourScript : MonoBehaviour
             if(sound.isPlaying)
             sound.Stop();
         }
+
+
     
 
     }
