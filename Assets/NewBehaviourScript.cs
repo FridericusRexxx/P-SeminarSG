@@ -31,7 +31,7 @@ public class NewBehaviourScript : MonoBehaviour
             if(!jump_pressedLastFrame && Input.GetKey("up"))
             {
                 isOnGround = false;
-                jump = new Vector3(0,0.5f,0);
+                jump = new Vector3(0,1.3f,0);
             }
             gameObject.transform.position = gameObject.transform.position + jump;
         }
