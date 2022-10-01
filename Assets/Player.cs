@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-     Rigidbody m_Rigidbody;
+    Rigidbody m_Rigidbody;
     public float m_Thrust = 10f;
     public float speed = 1;
     bool isOnGround;
