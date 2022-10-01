@@ -7,6 +7,8 @@ public class UIDropSlot : MonoBehaviour
 {
     // Reference to the item inside slot.
     public UIDragItem currentItem;
+    public UIDragItem correctItem;
     // Tells if slot is filled by other item.
     public bool SlotFilled => currentItem;
+    public bool iscorrect => currentItem == correctItem;
 }
