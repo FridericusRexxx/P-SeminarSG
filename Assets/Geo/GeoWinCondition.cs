@@ -13,6 +13,7 @@ public class GeoWinCondition : MonoBehaviour
     }
 
     // Update is called once per frame
+    private float waiting = 2.0f;
     void Update()
     {
         UIDropSlot[] slots = GetComponentsInChildren<UIDropSlot>();
@@ -20,5 +21,8 @@ public class GeoWinCondition : MonoBehaviour
             if(!slot.iscorrect)
                 return;
         winText.SetActive(true);
+        waiting -= Time.deltaTime;
+        if(waiting <= 0)
+            LevelLoader.returnToMainMenue();
     }
 }

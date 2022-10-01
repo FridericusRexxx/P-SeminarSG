@@ -12,11 +12,8 @@ public class Clickable : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void OnMouseUpAsButton()
     {
-        if(Input.GetMouseButtonDown(0))
-        {
             LevelLoader.loadLevel(level);
-        }
     }
 }

@@ -22,10 +22,17 @@ public class Main : MonoBehaviour
             winText.SetActive(true);
         }
     }
+    private float waiting = 2.0f;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.R)) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        if(winText.activeSelf)
+        {
+                    waiting -= Time.deltaTime;
+        if(waiting <= 0)
+            LevelLoader.returnToMainMenue();
         }
     }
 }

@@ -34,7 +34,7 @@ public class UIDragItem : MonoBehaviour
      
          if ( hit2D.collider != null )
          {
-             Debug.Log ( hit2D.collider.name );
+            //Debug.Log ( hit2D.collider.name );
         UIDropSlot slot = hit2D.collider.gameObject.GetComponent<UIDropSlot>();
         slot.currentItem = this;
         currentSlot = slot;
