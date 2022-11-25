@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Geografie.unity
     guid: 36fcb63fa2546bd498a596856f6712c7
+  - enabled: 1
+    path: Assets/Scenes/Englisch.unity
+    guid: 19433b7ba8ffc554bba1c91fe8be5925
+  - enabled: 1
+    path: Assets/Scenes/Biologie.unity
+    guid: 0992d378a82be334f84c374e1df98ab8
   m_configObjects: {}
