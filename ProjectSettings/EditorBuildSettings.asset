@@ -14,9 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Kabel Spiel.unity
     guid: 36ac92a47d495e04a9ad074ead384a84
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/JumpnRunTest.unity
     guid: a45af27bca399f149905a13fb76eb9dc
@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Musik.unity
     guid: 967fadb4c43298946a661a752e3d7ded
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: b9428f6499cb71a4d93318d1e9c11837
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: e225fcee7f17f2944966a63c7066dc10
   m_configObjects: {}
