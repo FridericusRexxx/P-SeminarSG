@@ -20,14 +20,13 @@ public class PlayerController : MonoBehaviour
     {
         if(gm.gameIsOver == false)
         {
-              if(Input.GetMouseButtonDown(0))
-        {
-            Jump();
-        }
-
+            if(Input.GetMouseButtonDown(0))
+            {
+                Jump();
+            }
+            transform.eulerAngles = new Vector3(0, 0, rb.velocity.y * rotationForce);
         }
        
-        transform.eulerAngles = new Vector3(0, 0, rb.velocity.y * rotationForce);
     }
 
     private void Jump()
@@ -37,8 +36,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        FindObjectOfType<ScoreScript>().IncreaseTheScore();
-    
+        GameObject scoreArea = collision.gameObject;
+        if(scoreArea.name == "ScoreArea")
+        {
+            FindObjectOfType<ScoreScript>().IncreaseTheScore();
+            scoreArea.SetActive(false);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

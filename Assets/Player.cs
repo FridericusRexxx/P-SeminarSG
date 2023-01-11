@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -21,11 +23,10 @@ public class Player : MonoBehaviour
     {
 
         if(Input.GetKey("d")){
-                print("D is held down");
                 gameObject.transform.position = gameObject.transform.position + new Vector3(speed *Time.deltaTime,0,0); 
             }
             if(Input.GetKey("a")){
-                print("A is held down");
+
                 gameObject.transform.position = gameObject.transform.position + new Vector3(-speed *Time.deltaTime,0,0); 
             }
         if(isOnGround == true)
@@ -73,6 +74,10 @@ public class Player : MonoBehaviour
     { 
        print("enter");
         isOnGround = true;
+        if(other.gameObject.tag=="Flagge")
+        {
+            print("AAAAAAAAAAAAAA");
+        }
     }
 
     
@@ -80,5 +85,9 @@ public class Player : MonoBehaviour
     { 
        print("exit");
         isOnGround = false;
+    }
+    public static void loadLevel(string level)
+    {
+            SceneManager.LoadScene (level , LoadSceneMode.Single);
     }
 }

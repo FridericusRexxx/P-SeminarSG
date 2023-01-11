@@ -6,10 +6,14 @@ using UnityEngine;
 public class GeoWinCondition : MonoBehaviour
 {
     public GameObject winText;
+    public AudioSource audioSource;
+    public AudioClip clip;
+    public float volume = 1.0f;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -21,6 +25,7 @@ public class GeoWinCondition : MonoBehaviour
             if(!slot.iscorrect)
                 return;
         winText.SetActive(true);
+        audioSource.PlayOneShot(clip, volume);
         waiting -= Time.deltaTime;
         if(waiting <= 0)
             LevelLoader.returnToMainMenue();

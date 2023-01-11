@@ -41,4 +41,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chemie.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Intros/Chemie Intro.unity
+    guid: 40380981407ab9c4b9d07ab86375f97b
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 1e3f0beb6975a794981055eebf8b3d0d
+  - enabled: 1
+    path: Assets/Scenes/Intros/Bio Intro.unity
+    guid: 47f9b0d9cf0e3ba47b5677775921f24d
+  - enabled: 1
+    path: Assets/Scenes/Intros/Englisch Intro.unity
+    guid: 354abeb82913ecb40beecdfa3335b753
+  - enabled: 1
+    path: Assets/Scenes/Intros/Geo Intro.unity
+    guid: f2c5ccdc15e2f2d48ba4d72ec44cd320
+  - enabled: 1
+    path: Assets/Scenes/Intros/Musik Intro.unity
+    guid: 67aaa33503fda7f41b29a9e707848c1a
+  - enabled: 1
+    path: Assets/Scenes/Intros/Physik Intro.unity
+    guid: 60e217df9e765c44b92654d6374cee57
+  - enabled: 1
+    path: Assets/Scenes/Intros/Sport Intro.unity
+    guid: 56e26c1052ca0ef4b85bf34d302bc93d
   m_configObjects: {}
