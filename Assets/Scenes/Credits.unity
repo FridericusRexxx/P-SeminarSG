@@ -240,8 +240,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -3.49}
-  m_SizeDelta: {x: 486.89, y: 863.02}
+  m_AnchoredPosition: {x: 0, y: -23.35}
+  m_SizeDelta: {x: 486.89, y: 902.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &611543246
 MonoBehaviour:
@@ -278,7 +278,7 @@ MonoBehaviour:
     m_LineSpacing: 1.2
   m_Text: "Serious Games \nP-Seminar im Fach Deutsch\n\n\nMitwirkende:\n\nLeitung:\nPeter
     Hien\n\nSpecial Thanks:\nSteffen Pohl\nZora Pidde\n\nProgrammierung:\nLeitung:
-    Frederik Rauschert\nSebastain Stadler\nBennet Buchberger\nAnes Ljajic\n\nGrafikdesign:\nLeitung:
+    Frederik Rauschert\nSebastian Stadler\nBennet Buchberger\nAnes Ljajic\n\nGrafikdesign:\nLeitung:
     Dominic Beyer\nLevi Koller\nNathanyel Richter\nJulius Endres\nNils Schlott\nJulius
     Sohns\nMatth\xE4us Boenisch\n\nSounddesign:\nLeitung: Marius Erdinger\nLinus
     Kuther\nElias Gei\xDFler\n"
