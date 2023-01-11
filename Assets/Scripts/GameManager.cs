@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public bool gameIsOver;
     public Image gameOverImage;
     public Button restartButton;
-    
+
     public void GameOver()
     {
         gameIsOver = true;

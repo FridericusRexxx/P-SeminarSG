@@ -322,7 +322,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: sprunglauftest
+          m_StringArgument: Sport Intro
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &172723819
@@ -727,7 +727,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Englisch
+          m_StringArgument: Englisch Intro
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &646544589
@@ -1259,7 +1259,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Musik
+          m_StringArgument: Musik Intro
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1260405311
@@ -1474,7 +1474,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Geografie
+          m_StringArgument: Geo Intro
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1363785834
@@ -1831,7 +1831,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Kabel Spiel
+          m_StringArgument: Physik Intro
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1644155622
@@ -1964,7 +1964,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Chemie
+          m_StringArgument: Chemie Intro
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1688357847
@@ -2097,7 +2097,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Biologie
+          m_StringArgument: Bio Intro
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1751660798
