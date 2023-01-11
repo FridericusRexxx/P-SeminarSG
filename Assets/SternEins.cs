@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class Stern : MonoBehaviour
+
+public class SternEins : MonoBehaviour
 {
-    public GameObject SternEins;
+    public GameObject Stern;
     // Start is called before the first frame update
     void Start()
     {
        if (Stats.sterneEnglisch >= 1)
         {
-            SternEins.transform.position = SternEins.transform.position + new Vector3 (-14,0,0);
+            Stern.transform.position = Stern.transform.position + new Vector3 (0,0,-1);
         }
     }
 

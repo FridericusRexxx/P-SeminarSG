@@ -41,5 +41,6 @@ public class StarSystem : MonoBehaviour
                 }
      Stats.bestTimeEnglisch = bestTime;
      Stats.sterneEnglisch = sterne;
+     print(bestTime);
     }
 }

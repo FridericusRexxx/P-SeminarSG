@@ -902,6 +902,7 @@ GameObject:
   m_Component:
   - component: {fileID: 381477930}
   - component: {fileID: 381477931}
+  - component: {fileID: 381477932}
   m_Layer: 0
   m_Name: slots
   m_TagString: Untagged
@@ -948,6 +949,18 @@ MonoBehaviour:
   audioSource: {fileID: 128165098}
   clip: {fileID: 8300000, guid: 898975bfffaa7a2468c242a5d1ffa4a6, type: 3}
   volume: 1
+--- !u!114 &381477932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381477929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89605b18bec8a4f4aa305ef2e1745238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &403601852
 GameObject:
   m_ObjectHideFlags: 0
