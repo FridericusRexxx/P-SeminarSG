@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: 39.999992}
-  m_SizeDelta: {x: 823.77, y: 483.45}
+  m_AnchoredPosition: {x: -0.000030518, y: 87.47993}
+  m_SizeDelta: {x: 823.77, y: 469.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &237283298
 MonoBehaviour:
@@ -1258,9 +1258,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Auf deinem Bildschirm siehst du eine Tafel mit 8 verschiedenen englischen
-    W\xF6rtern. Ordne die Bilder auf der rechten Seite den entsprechenden W\xF6rtern
-    zu, indem du sie mit deiner Maus auf das jeweilige K\xE4stchen ziehst."
+  m_Text: "Ziehe die Ogane von Rechts nach Links auf den K\xF6rper an die richtige
+    Stelle. Ob du richtig bist siehst du am Ende."
 --- !u!222 &1511345663
 CanvasRenderer:
   m_ObjectHideFlags: 0

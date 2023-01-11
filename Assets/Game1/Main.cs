@@ -10,6 +10,7 @@ public class Main : MonoBehaviour
     public int switchCount;
     public GameObject winText;
     private int onCount = 0;
+    public AudioSource audioSource;
 
     private void Awake()
     {
@@ -20,6 +21,7 @@ public class Main : MonoBehaviour
         if (onCount == switchCount)
         {
             winText.SetActive(true);
+            audioSource.Play();
         }
     }
     private float waiting = 2.0f;

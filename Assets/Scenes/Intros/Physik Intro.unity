@@ -276,7 +276,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Es ist Stromausfall und alle Lichter sind ausgegangen.\r\nZiehe die Kabel
-    mit der Maus so von der linken zur rechtens Seite, dass alle L\xE4mpchen wieder
+    mit der Maus so von der linken zur rechten Seite, dass alle L\xE4mpchen wieder
     leuchten."
 --- !u!222 &471102153
 CanvasRenderer:
@@ -435,7 +435,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9a2dfb58417ee0f4495cc1428502de8a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.619
+  m_Volume: 0.355
   m_Pitch: 1
   Loop: 0
   Mute: 0

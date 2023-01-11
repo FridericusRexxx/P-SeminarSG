@@ -395,7 +395,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c762e3864db5c674ca5923099e82cde6, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.61
   m_Pitch: 1
@@ -1180,10 +1180,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Wenn du auf die verschiedenen Noten unter den K\xE4stchen dr\xFCckst,
-    h\xF6rst du eine kurze Melodie. Diese Melodie wurde von einem Instrument gespielt,
-    was auf der rechten Seite zu sehen ist. \r\nZiehe alle Instrumente in das K\xE4stchen
-    \xFCber der jeweils richtigen Melodie."
+  m_Text: "Deine Aufgabe ist es ein Jump n' Run zu bew\xE4ltigen und das oberste
+    Brett zu erreichen. Nutze hierf\xFCr A und D zum Laufen sowie W zum Springen."
 --- !u!222 &1430647180
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1410,8 +1408,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518004, y: 40.000004}
-  m_SizeDelta: {x: 823.77, y: 483.45}
+  m_AnchoredPosition: {x: -0.000030518004, y: 80.52}
+  m_SizeDelta: {x: 823.77, y: 339.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2100442567
 MonoBehaviour:
